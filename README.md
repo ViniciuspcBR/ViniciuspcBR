@@ -6,11 +6,11 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/vinicius-pereira-cardoso/">
-    <img 
-      src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0A66C2&logoColor=white&style=for-the-badge" 
-      height="28" 
-      alt="LinkedIn" 
-      />
+    <img
+      src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0A66C2&logoColor=white&style=for-the-badge"
+      height="28"
+      alt="LinkedIn"
+    />
   </a>
   <a href="https://www.instagram.com/viniciuspcardoso_">
     <img
@@ -48,6 +48,14 @@ Power BI · PostgreSQL · SQL · Modelagem de dados · Engenharia de dados
 
 **Desenvolvimento Full Stack**
 Java · React · Next.js · Node.js · HTML · CSS · JavaScript · Docker · Git
+
+---
+
+## Atividade no GitHub
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ViniciuspcBR/ViniciuspcBR/main/metrics.plugin.isocalendar.fullyear.svg" alt="Calendário isométrico das minhas contribuições no último ano" />
+</p>
 
 ---
 
