@@ -53,6 +53,18 @@ Java · React · Next.js · Node.js · HTML · CSS · JavaScript · Docker · Gi
 
 ---
 
+## Atividade no GitHub
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ViniciuspcBR/ViniciuspcBR/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ViniciuspcBR/ViniciuspcBR/output/github-snake.svg" />
+    <img src="https://raw.githubusercontent.com/ViniciuspcBR/ViniciuspcBR/output/github-snake.svg" alt="Cobrinha comendo o gráfico das minhas contribuições no GitHub" />
+  </picture>
+</p>
+
+---
+
 <p align="center">
   Veja meus projetos fixados logo abaixo ⬇️
 </p>
