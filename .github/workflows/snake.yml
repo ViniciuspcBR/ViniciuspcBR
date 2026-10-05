@@ -1,0 +1,49 @@
+# Nome que aparece na aba "Actions" do GitHub
+name: Snake
+
+# QUANDO a tarefa roda
+on:
+  # Todo dia à meia-noite (UTC). Formato cron: minuto hora dia mês dia-da-semana
+  schedule:
+    - cron: "0 0 * * *"
+  # Permite rodar manualmente pelo botão "Run workflow"
+  workflow_dispatch:
+  # Sempre que você enviar algo para a branch main
+  push:
+    branches:
+      - main
+
+# O QUE roda
+jobs:
+  generate:
+    # Autoriza a tarefa a gravar (commitar) arquivos no seu repositório
+    permissions:
+      contents: write
+    # Máquina virtual (Linux) que o GitHub empresta para executar a tarefa
+    runs-on: ubuntu-latest
+    # Se passar de 10 minutos, cancela (evita ficar travada)
+    timeout-minutes: 10
+    steps:
+      # PASSO 1: lê suas contribuições e desenha a cobrinha em dois SVGs
+      - name: Gerar a cobrinha
+        uses: Platane/snk/svg-only@v3
+        with:
+          # Seu usuário (pega automaticamente o dono do repositório: ViniciuspcBR)
+          github_user_name: ${{ github.repository_owner }}
+          # Arquivos a gerar. Depois do "?" vêm as opções de cada um
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      # PASSO 2: envia a pasta "dist" para uma branch separada chamada "output",
+      # assim os SVGs não poluem o histórico da sua branch main
+      - name: Publicar na branch output
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          # Branch que recebe os arquivos (é criada sozinha na primeira vez)
+          target_branch: output
+          # Pasta que será enviada
+          build_dir: dist
+        env:
+          # Token automático do GitHub (não precisa criar nada)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
