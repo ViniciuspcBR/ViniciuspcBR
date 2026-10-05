@@ -15,11 +15,11 @@ jobs:
   github-metrics:
     # Máquina virtual (Linux) que o GitHub empresta para executar a tarefa
     runs-on: ubuntu-latest
-    # Autoriza a tarefa a gravar (commitar) o SVG gerado no seu repositório
+    # Autoriza a tarefa a gravar (commitar) arquivos no seu repositório
     permissions:
       contents: write
     steps:
-      # Usa a ferramenta "metrics" de lowlighter
+      # PASSO 1: o "fotógrafo" gera o SVG e o salva no repositório
       - uses: lowlighter/metrics@latest
         with:
           # Nome do arquivo SVG que será criado no repositório
@@ -32,3 +32,24 @@ jobs:
           plugin_isocalendar: yes
           # Mostra o ano inteiro (o padrão seria meio ano)
           plugin_isocalendar_duration: full-year
+
+      # PASSO 2: baixa o repositório já com o SVG recém-gerado.
+      # "ref" força pegar a ponta atual da branch (e não o commit antigo que disparou a tarefa)
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      # PASSO 3: o "retocador" troca a cor do chão e move as legendas
+      - name: Retocar o SVG
+        run: python3 .github/scripts/patch-isocalendar.py metrics.plugin.isocalendar.fullyear.svg
+
+      # PASSO 4: se o arquivo mudou, salva o resultado retocado no repositório
+      - name: Salvar se mudou
+        run: |
+          if ! git diff --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add metrics.plugin.isocalendar.fullyear.svg
+            git commit -m "Retocar calendário isométrico"
+            git push
+          fi
