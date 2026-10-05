@@ -36,9 +36,9 @@ Aberto a oportunidades em **Análise de Dados**, **Business Intelligence** e **D
 ## Tecnologias
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,js,nodejs,react,nextjs,html,css,postgres&theme=dark" height="60" alt="Linguagens, frameworks e banco de dados" />
-  <img src="https://raw.githubusercontent.com/ViniciuspcBR/ViniciuspcBR/main/assets/powerbi.svg" height="60" alt="Power BI" />
-  <img src="https://skillicons.dev/icons?i=git,github,docker,idea&theme=dark" height="60" alt="Ferramentas de desenvolvimento" />
+  <img src="https://skillicons.dev/icons?i=java,js,nodejs,react,nextjs,html,css,postgres&theme=dark" height="48" alt="Linguagens, frameworks e banco de dados" />
+  <img src="https://raw.githubusercontent.com/ViniciuspcBR/ViniciuspcBR/main/assets/powerbi.svg" height="48" alt="Power BI" />
+  <img src="https://skillicons.dev/icons?i=git,github,docker,idea&theme=dark" height="48" alt="Ferramentas de desenvolvimento" />
 </p>
 
 ---
