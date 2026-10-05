@@ -6,10 +6,18 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/vinicius-pereira-cardoso/">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0A66C2&logoColor=white&style=for-the-badge" height="28" alt="LinkedIn" />
+    <img 
+      src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0A66C2&logoColor=white&style=for-the-badge" 
+      height="28" 
+      alt="LinkedIn" 
+      />
   </a>
-  <a href="mailto:viniciuspcardoso05@gmail.com">
-    <img src="https://img.shields.io/static/v1?message=E-mail&logo=gmail&label=&color=1D4ED8&logoColor=white&style=for-the-badge" height="28" alt="E-mail" />
+  <a href="https://www.instagram.com/viniciuspcardoso_">
+    <img
+      src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&style=for-the-badge"
+      height="28"
+      alt="Instagram"
+    />
   </a>
 </p>
 
