@@ -36,7 +36,11 @@ Aberto a oportunidades em **Análise de Dados**, **Business Intelligence** e **D
 ## Tecnologias
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,js,react,nextjs,html,css,postgres,powerbi,git,github,docker,idea&theme=dark" height="60" alt="Tecnologias que utilizo" />
+  <img src="https://skillicons.dev/icons?i=java,js,nodejs,react,nextjs,html,css,postgres,git,github,docker,idea&theme=dark" height="60" alt="Tecnologias que utilizo" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/static/v1?message=Power%20BI&logo=powerbi&label=&color=F2C811&logoColor=black&style=for-the-badge" height="28" alt="Power BI" />
 </p>
 
 ---
@@ -54,7 +58,7 @@ Java · React · Next.js · Node.js · HTML · CSS · JavaScript · Docker · Gi
 ## Atividade no GitHub
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ViniciuspcBR/ViniciuspcBR/main/metrics.plugin.isocalendar.fullyear.svg" alt="Calendário isométrico das minhas contribuições no último ano" />
+  <img src="https://raw.githubusercontent.com/ViniciuspcBR/ViniciuspcBR/main/metrics.plugin.isocalendar.fullyear.svg?v=2" alt="Calendário isométrico das minhas contribuições no último ano" />
 </p>
 
 ---
