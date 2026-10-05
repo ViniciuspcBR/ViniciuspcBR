@@ -1,0 +1,34 @@
+# Nome que aparece na aba "Actions" do GitHub
+name: Metrics
+
+# QUANDO a tarefa roda
+on:
+  # Todo dia à meia-noite (UTC). Formato cron: minuto hora dia mês dia-da-semana
+  schedule: [{cron: "0 0 * * *"}]
+  # Sempre que você enviar algo para a branch main
+  push: {branches: ["main"]}
+  # Permite rodar manualmente pelo botão "Run workflow"
+  workflow_dispatch:
+
+# O QUE roda
+jobs:
+  github-metrics:
+    # Máquina virtual (Linux) que o GitHub empresta para executar a tarefa
+    runs-on: ubuntu-latest
+    # Autoriza a tarefa a gravar (commitar) o SVG gerado no seu repositório
+    permissions:
+      contents: write
+    steps:
+      # Usa a ferramenta "metrics" de lowlighter
+      - uses: lowlighter/metrics@latest
+        with:
+          # Nome do arquivo SVG que será criado no repositório
+          filename: metrics.plugin.isocalendar.fullyear.svg
+          # Seu token guardado como segredo (nunca escreva o token aqui)
+          token: ${{ secrets.METRICS_TOKEN }}
+          # Não gera o bloco padrão de métricas, só o que pedimos abaixo
+          base: ""
+          # Liga o plugin do calendário isométrico
+          plugin_isocalendar: yes
+          # Mostra o ano inteiro (o padrão seria meio ano)
+          plugin_isocalendar_duration: full-year
