@@ -1,7 +1,7 @@
 <h1 align="center">Vinicius</h1>
 
 <p align="center">
-  <strong>Desenvolvedor Full Stack · Análise de Dados · Business Intelligence</strong>
+  <strong>Análise de Dados · Desenvolvedor Full Stack · Business Intelligence</strong>
 </p>
 
 <p align="center">
